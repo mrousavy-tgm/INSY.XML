@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Flugangst 7A</title>
+		<author>Sebastian Fitzek</author>
+		<year>2017</year>
+		<price>23.70</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Die Therapie</title>
+		<author>Sebastian Fitzek</author>
+		<year>2006</year>
+		<price>10.30</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Dornenspiel</title>
+		<author>Karen Rose</author>
+		<year>2017</year>
+		<price>17.50</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Origin</title>
+		<author>Dan Brown</author>
+		<year>2017</year>
+		<price>28.00</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Verfolgung</title>
+		<author>David Lagercrantz</author>
+		<year>2017</year>
+		<price>23.70</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Durst</title>
+		<author>Jo Nesbo</author>
+		<year>2017</year>
+		<price>24.70</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Der Fledermausmann</title>
+		<author>Jo Nesbo</author>
+		<year>2013</year>
+		<price>10.30</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Mord im Zeichen des Zen</title>
+		<author>Oliver Bottini</author>
+		<year>2015</year>
+		<price>10.30</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Der Kameramörder</title>
+		<author>Thomas Glavinic</author>
+		<year>2016</year>
+		<price>9.20</price>
+	</book>
+	<book category="Krimi &amp; Thriller">
+		<title lang="en">Knickerbocker4immer</title>
+		<author>Thomas Brezina</author>
+		<year>2017</year>
+		<price>18.00</price>
+	</book>
+</bookstore>
