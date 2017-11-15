@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="de" xml:lang="de" class="no-js">
+	<head>
+		<title>XML Zusammenfasser 3000</title>
+	</head>
+	<body>
+
+		<input type="file" id="filePicker">Wählen Sie eine XML oder JSON Datei aus</input>
+		<input type="button" value="Submit" onclick="readInput();"/>
+		<br/>
+		<p id="paragraph">XML: <br/></p>
+
+	</body>
+
+
+	<script type="text/javascript">
+		function parseXml(xml) {
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(xml, "text/xml");
+			var elements = xmlDoc.getElementsByTagName("book")
+			for(i = 0; i < elements.length; i++) {
+				var title = elements[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+				var category = elements[i].getAttribute("category");
+				var year = elements[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+				var author = elements[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+				document.getElementById("paragraph").innerHTML += title + " (" + category + "), " + year + " from " + author + "<br/>";
+			}
+		}
+
+		function readInput() {
+			var file = document.getElementById("filePicker").files[0];
+			var reader = new FileReader();
+			reader.readAsText(file, "UTF-8");
+			reader.onload = function (evt) {
+				parseXml(evt.target.result);
+			}
+			reader.onerror = function (evt) {
+				alert("Error reading file.");
+				return;
+			}
+		}
+	</script>
+</html>
